@@ -1,6 +1,6 @@
-package com.itstyle.seckill.service;
+package com.seckill.service;
 
-import com.itstyle.seckill.common.entity.Result;
+import com.seckill.common.entity.Result;
 
 public interface ISeckillDistributedService {
 
