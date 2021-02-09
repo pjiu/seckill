@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.seckill.common.dynamicquery.DynamicQuery;
-import com.seckill.common.entity.Result;
-import com.seckill.common.entity.SuccessKilled;
-import com.seckill.common.enums.SeckillStatEnum;
+import com.seckill.dynamicquery.DynamicQuery;
+import com.seckill.entity.Result;
+import com.seckill.entity.SuccessKilled;
+import com.seckill.enums.SeckillStatEnum;
 import com.seckill.distributedlock.redis.RedissLockUtil;
 import com.seckill.distributedlock.zookeeper.ZkLockUtil;
 import com.seckill.service.ISeckillDistributedService;
