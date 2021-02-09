@@ -1,4 +1,4 @@
-package com.itstyle.seckill.common.redis;
+package com.seckill.common.redis;
 
 import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
@@ -12,8 +12,6 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
 /**
  * 缓存工具类
- * 创建者 科帮网
- * 创建时间	2018年4月8日
  */
 @Component
 public class RedisUtil {
@@ -48,19 +46,7 @@ public class RedisUtil {
         }
         return false;
     }
-    /**
-     * 缓存value操作
-     * @Author  科帮网
-     * @param k
-     * @param v
-     * @param time
-     * @param unit
-     * @return  boolean
-     * @Date	2017年12月23日
-     * 更新日志
-     * 2017年12月23日  科帮网  首次创建
-     *
-     */
+   
     public  boolean cacheValue(String k, Serializable v, long time,TimeUnit unit) {
         String key = KEY_PREFIX_VALUE + k;
         try {

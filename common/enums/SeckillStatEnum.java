@@ -1,4 +1,4 @@
-package com.itstyle.seckill.common.enums;
+package com.seckill.common.enums;
 
 public enum SeckillStatEnum {
 

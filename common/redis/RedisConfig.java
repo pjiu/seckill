@@ -1,4 +1,4 @@
-package com.itstyle.seckill.common.redis;
+package com.seckill.common.redis;
 
 import java.lang.reflect.Method;
 
@@ -21,16 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Configuration
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport {
-	/**
-	 * 自定义key(消息队列 暂时用不到 自行忽略)
-     * 此方法将会根据类名+方法名+所有参数的值生成唯一的一个key,即使@Cacheable中的value属性一样，key也会不一样。
-	 * @Author  科帮网
-	 * @return 
-	 * @Date	2017年8月13日
-	 * 更新日志
-	 * 2017年8月13日  科帮网 首次创建
-	 *
-	 */
+
 	@Bean
 	public KeyGenerator keyGenerator() {
 		return new KeyGenerator() {
@@ -49,12 +40,6 @@ public class RedisConfig extends CachingConfigurerSupport {
 	}
     /**
      * 缓存管理器
-     * @Author  科帮网
-     * @param redisTemplate
-     * @return  CacheManager
-     * @Date	2017年8月13日
-     * 更新日志
-     * 2017年8月13日  科帮网  首次创建
      */
 	@SuppressWarnings("rawtypes")
 	@Bean
@@ -63,12 +48,6 @@ public class RedisConfig extends CachingConfigurerSupport {
 	}
     /**
      * 序列化Java对象
-     * @Author  科帮网
-     * @param factory
-     * @return  RedisTemplate<Object, Object>
-     * @Date	2017年8月13日
-     * 更新日志
-     * 2017年8月13日 科帮网  首次创建
      *
      */
     @SuppressWarnings({ "rawtypes", "unchecked" })
