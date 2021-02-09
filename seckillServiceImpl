@@ -10,12 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.seckill.common.aop.Servicelock;
-import com.seckill.common.dynamicquery.DynamicQuery;
-import com.seckill.common.entity.Result;
-import com.seckill.common.entity.Seckill;
-import com.seckill.common.entity.SuccessKilled;
-import com.seckill.common.enums.SeckillStatEnum;
+import com.seckill.aop.Servicelock;
+import com.seckill.dynamicquery.DynamicQuery;
+import com.seckill.entity.Result;
+import com.seckill.entity.Seckill;
+import com.seckill.entity.SuccessKilled;
+import com.seckill.enums.SeckillStatEnum;
 import com.seckill.repository.SeckillRepository;
 import com.seckill.service.ISeckillService;
 @Service
